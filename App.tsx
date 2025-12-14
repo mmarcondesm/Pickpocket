@@ -1,45 +1,52 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React from "react";
+import {View, Text, TouchableOpacity, StyleSheet, Image, Alert} from "react-native"
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
 
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  return (
-    <SafeAreaProvider>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
-    </SafeAreaProvider>
-  );
-}
-
-function AppContent() {
-  const safeAreaInsets = useSafeAreaInsets();
-
-  return (
+export default function Main () {
+  return(
     <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      />
+      <View style={styles.ContImage}>
+      <Image source={require('./Components/Images/Group 2.png')} style={styles.image} />
+      </View>  
+
+      <TouchableOpacity
+      style={styles.button} 
+      onPress={() => Alert.alert('Left button pressed')}>
+        <Text style={{fontSize: 20}}>Sign Up</Text>
+      </TouchableOpacity>
+
+
     </View>
-  );
+  )
+
+  
 }
+
+
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
+    container:{
+      flex: 1,
+      backgroundColor: "#1D1638"
+    },
+    ContImage:{
+      paddingTop: 150,
+      paddingStart: 60
+    },
+    button:{
+    alignItems: 'center',
+    backgroundColor: '#8533EE',
+    padding: 20,
+    marginTop: '40%',
+    marginStart: '10%',
+    marginEnd: '10%',
+    borderBottomEndRadius: 20,
+    borderBottomStartRadius: 20,
+    borderTopStartRadius: 20,
+    borderTopEndRadius: 20,
 
-export default App;
+  
+
+    }
+
+  })
