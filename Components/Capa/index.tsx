@@ -1,23 +1,30 @@
 import React from "react";
 import {View, Text, TouchableOpacity, StyleSheet, Image, Alert} from "react-native"
+import { useNavigation, NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import SignUP from "../Cadastro";
+
+
+
 
 
 export default function Capa(){
+    const navigation = useNavigation();
+
+
   return(
     <View style={styles.container}>
       <View style={styles.ContImage}>
-      <Image source={require('./Images/Capa.png')} />
-      </View>  
+      <Image source={require('../Images/Capa.png')} />
+      </View>
 
       <TouchableOpacity
       style={styles.button} 
-      onPress={() => Alert.alert('Me beija!')}>
+      >
 
-        <Text style={{fontSize: 20}}>Sign Up</Text>
+      <Text style={{fontSize: 20}}>Sign Up</Text>
 
       </TouchableOpacity>
-
-
     </View>
   )
 
