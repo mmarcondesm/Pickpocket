@@ -6,7 +6,7 @@ export default function Capa(){
   return(
     <View style={styles.container}>
       <View style={styles.ContImage}>
-      <Image source={require('./Components/Images/Capa.png')} />
+      <Image source={require('./Images/Capa.png')} />
       </View>  
 
       <TouchableOpacity
@@ -16,6 +16,8 @@ export default function Capa(){
         <Text style={{fontSize: 20}}>Sign Up</Text>
 
       </TouchableOpacity>
+
+
     </View>
   )
 
