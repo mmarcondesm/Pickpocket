@@ -14,6 +14,7 @@ export default function Routes() {
       <Stack.Screen 
           name="Capa" 
           component={Capa}
+          options={{title: 'Capa'}}
           />
       <Stack.Screen 
           name="SignUp" 

@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from 'react';
 import {View, Text, TouchableOpacity, StyleSheet, Image, Alert} from "react-native"
 import { useNavigation, NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -18,8 +18,9 @@ export default function Capa(){
       <Image source={require('../Images/Capa.png')} />
       </View>
 
-      <TouchableOpacity
-      style={styles.button} 
+      <TouchableOpacity 
+      style={styles.button}
+      onPress={() => navigation.navigate('SignUp')}
       >
 
       <Text style={{fontSize: 20}}>Sign Up</Text>
