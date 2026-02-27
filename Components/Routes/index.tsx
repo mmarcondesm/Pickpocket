@@ -14,11 +14,12 @@ export default function Routes() {
       <Stack.Screen 
           name="Capa" 
           component={Capa}
-          options={{title: 'Capa'}}
+          options={{ headerShown: false }}
           />
       <Stack.Screen 
           name="SignUp" 
           component={SignUP}
+          options={{ headerShown: false }}
           />
     </Stack.Navigator>
   );

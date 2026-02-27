@@ -15,10 +15,10 @@ export default function Capa(){
   return(
     <View style={styles.container}>
       <View style={styles.ContImage}>
-      <Image source={require('../Images/Capa.png')} />
+      <Image source={require('../Images/Capa.png')}/>
       </View>
 
-      <TouchableOpacity 
+      <TouchableOpacity
       style={styles.button}
       onPress={() => navigation.navigate('SignUp')}
       >
