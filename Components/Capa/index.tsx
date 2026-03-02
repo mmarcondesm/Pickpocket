@@ -22,9 +22,16 @@ export default function Capa(){
       style={styles.button}
       onPress={() => navigation.navigate('SignUp')}
       >
-
+        
       <Text style={{fontSize: 20}}>Sign Up</Text>
+      </TouchableOpacity>
 
+      <TouchableOpacity
+      style={styles.button}
+      onPress={() => navigation.navigate('Introduction')}
+      >
+
+        <Text style={{fontSize: 20}}>Introduction</Text>
       </TouchableOpacity>
     </View>
   )
