@@ -6,12 +6,20 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Capa from '../Capa';
 import SignUP from '../Cadastro';
 import Introduction from '../Introduction';
+import Introduction2 from '../Introduction/index2';
+import Introduction3 from '../Introduction/index3';
+import Introduction4 from '../Introduction/index4';
 
 const Stack = createNativeStackNavigator();
 
 export default function Routes() {
   return (
     <Stack.Navigator initialRouteName="Capa">
+      <Stack.Screen
+          name="Introduction"
+          component={Introduction}
+          options={{ headerShown: false }}
+          />
       <Stack.Screen 
           name="Capa" 
           component={Capa}
@@ -23,8 +31,18 @@ export default function Routes() {
           options={{ headerShown: false }}
           />
       <Stack.Screen
-          name="Introduction"
-          component={Introduction}
+          name="Introduction2"
+          component={Introduction2}
+          options={{ headerShown: false }}
+          />
+      <Stack.Screen
+          name="Introduction3"
+          component={Introduction3}
+          options={{ headerShown: false }}
+          />
+      <Stack.Screen
+          name="Introduction4"
+          component={Introduction4}
           options={{ headerShown: false }}
           />
     </Stack.Navigator>

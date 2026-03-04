@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Text, View, Image, StyleSheet, TouchableOpacity, Button } from "react-native";
 import { useNavigation, NavigationContainer } from '@react-navigation/native';
 
-export default function Introduction() {
+export default function Introduction4() {
     const navigation = useNavigation();
 
     return(
@@ -12,23 +12,17 @@ export default function Introduction() {
             </View>
 
             <View style={styles.LayoutText}>
-                <Text style={styles.Title}>Introduction 1</Text>
-                <Text style={styles.Text}>Text about the problem of the violence in the city</Text>
+                <Text style={styles.Title}>Introduction 4</Text>
+                <Text style={styles.Text}>Text that explain how the app works</Text>
             </View>
 
             <View style={styles.fixToText}>
-               <TouchableOpacity
-                style={styles.buttonskip}
-                onPress={() => navigation.navigate('Capa')}>
-                <Text style={styles.butext}>Skip</Text>
-                </TouchableOpacity>
-
+               
                 <TouchableOpacity
-                style={styles.buttonext}
-                onPress={() => navigation.navigate('Introduction2')}>
-                <Text style={styles.butext}>Next</Text>
+                    style={styles.buttonskip}
+                    onPress={() => navigation.navigate('Capa')}>
+                    <Text style={styles.butext}>Get Started</Text>
                 </TouchableOpacity>
-
 
             </View>
         </View>
@@ -59,30 +53,17 @@ const styles = StyleSheet.create({
         marginStart: '5%',
         marginEnd: '5%'
     },
-    buttonext:{
-        backgroundColor: '#8533EE',
-        marginEnd: '5%',
-        borderBottomEndRadius: 20,
-        borderBottomStartRadius: 20,
-        borderTopStartRadius: 20,
-        borderTopEndRadius: 20,
-        padding: 20
-
-    },
     buttonskip:{
         backgroundColor: '#8533EE',
-        marginStart: '5%',
         borderBottomEndRadius: 20,
         borderBottomStartRadius: 20,
         borderTopStartRadius: 20,
         borderTopEndRadius: 20,
         padding: 20,
-        
-        
     },
     fixToText:{
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         marginTop: '70%'
     },
     butext:{

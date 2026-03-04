@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Text, View, Image, StyleSheet, TouchableOpacity, Button } from "react-native";
 import { useNavigation, NavigationContainer } from '@react-navigation/native';
 
-export default function Introduction() {
+export default function Introduction3() {
     const navigation = useNavigation();
 
     return(
@@ -12,20 +12,20 @@ export default function Introduction() {
             </View>
 
             <View style={styles.LayoutText}>
-                <Text style={styles.Title}>Introduction 1</Text>
-                <Text style={styles.Text}>Text about the problem of the violence in the city</Text>
+                <Text style={styles.Title}>Introduction 2</Text>
+                <Text style={styles.Text}>Text keep explain how the app works</Text>
             </View>
 
             <View style={styles.fixToText}>
                <TouchableOpacity
                 style={styles.buttonskip}
-                onPress={() => navigation.navigate('Capa')}>
+                onPress={() => navigation.navigate('Introduction')}>
                 <Text style={styles.butext}>Skip</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
                 style={styles.buttonext}
-                onPress={() => navigation.navigate('Introduction2')}>
+                onPress={() => navigation.navigate('Introduction4')}>
                 <Text style={styles.butext}>Next</Text>
                 </TouchableOpacity>
 
