@@ -3,12 +3,13 @@ import {View} from 'react-native'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Capa from '../Capa';
 import SignUP from '../Cadastro';
 import Introduction from '../Introduction';
 import Introduction2 from '../Introduction/index2';
 import Introduction3 from '../Introduction/index3';
 import Introduction4 from '../Introduction/index4';
+import Capa from '../Capa';
+
 
 const Stack = createNativeStackNavigator();
 

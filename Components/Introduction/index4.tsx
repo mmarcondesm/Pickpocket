@@ -20,7 +20,7 @@ export default function Introduction4() {
                
                 <TouchableOpacity
                     style={styles.buttonskip}
-                    onPress={() => navigation.navigate('Capa')}>
+                    onPress={() => navigation.navigate('SignUp')}>
                     <Text style={styles.butext}>Get Started</Text>
                 </TouchableOpacity>
 
